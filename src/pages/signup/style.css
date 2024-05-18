@@ -1,0 +1,140 @@
+ .signup {
+    
+  box-sizing: border-box;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ .signup .container {
+   margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  padding: 20px 30px;
+  background-color: rgb(192, 202, 212);
+  width: 350px;
+  border-radius: 30px;
+  border: 1px solid rgb(201, 195, 195);
+  }
+.container .image1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 7px;
+}
+.container .image1 img {
+  height: 90px;
+  width: 90px;
+  padding: 0;
+  margin: 0;
+
+  border-radius: 50%;
+  object-fit: cover;
+}
+.container .image .camera {
+  position: absolute;
+  background-color: green !important;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  height: 27px;
+  width: 27px;
+  border-radius: 50%;
+}
+.container .image p {
+  font-size: 10px;
+}
+.container .inputs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-top: 10px;
+}
+.container .inputs input {
+  padding: 15px;
+  outline: none;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: 15px;
+  border: 1px solid rgb(145, 145, 145);
+}
+.container .inputs .password{
+    position: relative;
+}
+.container .inputs .password input{
+  width: 100%;
+}
+.container .inputs .pass-btn {
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+.container .msg {
+  color: red;
+  font-size: 15px;
+text-align: left;
+margin: 5px 0;
+}
+.container .sub-btn {
+  width: 100%;
+  padding: 5px 10px;
+  color: white;
+  cursor: pointer;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: none;
+    font-size: 17px;
+  border-radius: 15px;
+margin: 10px auto;
+}
+
+@media (max-width:400px) {
+    .signup .container {
+     margin-top: 10px;
+    padding: 10px 20px;
+    width: 90%;
+    }
+  .container .image1 {
+    padding: 5px;
+  }
+  .container .image1 img {
+    height: 70px;
+    width: 70px;
+  }
+  .container .image p {
+    font-size: 8px;
+    margin: 10px 0;
+  }
+  .container .inputs {
+    row-gap: 10px;
+    margin-top: 10px;
+  }
+  .container .inputs input {
+    padding: 15px;
+    height: 20px;
+    font-size: 15px;
+    border: 1px solid rgb(145, 145, 145);
+  }
+  .container .inputs .pass-btn {
+    right: 10px;
+    top: 4px;
+  }
+  .container .msg {
+    font-size: 12px;
+  }
+  .container .sub-btn {
+    padding: 8px 7px;
+    font-size: 15px;
+    border-radius: 15px;
+  margin: 8px auto;
+  }  
+}
+

@@ -1,0 +1,132 @@
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.profile .container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.profile .container .action{
+    position: absolute;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.616);
+}
+.profile .container .action .act{
+    position: absolute;
+    width: 300px;
+    z-index: 100;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    top: 35%;
+    right: 40%;
+    height: 230px;
+   display: flex;
+   gap: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.profile .container .action .div{
+    display: flex;
+   gap: 30px;
+    justify-content: space-between;
+}
+.profile .container .action .div button{
+    padding: 10px 25px;
+    border-radius: 15px;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(194, 193, 193);
+}
+.profile .container .action .div .logout{
+    background-color: rgb(247, 25, 25);
+    color: white;
+}
+.profile .container .action .div .logout:hover{
+    background-color: rgb(201, 0, 0);
+}
+.profile .container .image img{
+    height: 200px;
+    width: 200px;
+    border: 4px solid rgb(0, 38, 209);
+    margin: 20px;
+    object-fit: contain;
+    background-color: rgb(26, 25, 25);
+    border-radius:20%;
+}
+.profile-edit{
+    font-size: 20px;
+    color: blue;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    background-color: transparent;
+}
+.profile .container .details{
+    padding: 10px;
+}
+.profile .container .details h4{
+    font-size: 25px;
+    margin: 10px;
+}
+.profile .container h3{
+    padding: 10px;
+    background-color: rgb(62, 81, 90);
+    width: 90vw;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    margin: 20px;
+}
+.profile .container .actions{
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.profile .container .actions button{
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: 600;
+    color: red;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.profile .container .actions .ps{
+    color: blue;
+}
+@media (max-width:500px) {
+   
+    .profile .container .action .act{
+        left: 20%;
+    }
+.profile .container .details h4{
+    font-size: 20px;
+    margin: 10px;
+}   
+}@media (max-width:400px){
+    .profile .container .action .act{
+        left: 7%;
+    }
+}
+@media (max-width:350px){
+    
+    .profile .container .details h4{
+        font-size: 18px;
+        margin: 10px;
+    }
+    
+}

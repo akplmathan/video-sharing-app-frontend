@@ -1,0 +1,109 @@
+.my-video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.my-video .container{
+    width: 100%;
+    display: flex;
+    height: auto;
+    gap: 30px;
+    margin: 10px 30px;
+}
+.my-video .container .video{
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(228, 223, 223, 0.726);
+    padding: 10px 60px;
+}
+.my-video .container .video .left{
+    display: flex;
+    gap: 30px;
+}
+
+.my-video .container .video h4{
+    color: black;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+.my-video .container .video p{
+    color: gray;
+}
+.my-video .container .video .right button{
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+.my-video .container p {
+    width: 100%;
+
+}
+@media (max-width:600px) {
+   
+    .my-video .container{
+        width: 100%;
+        gap: 20px;
+        margin: 10px;
+    }
+    .my-video .container .video{
+        width: 100vw;
+        padding: 10px;
+    }
+    .my-video .container .video .left{
+        gap: 10px;
+    }
+    .my-video .container .video h4{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .my-video .container .video .right button{
+        padding: 5px;
+    }
+    .my-video .container p {
+        width: 100%;
+    
+    }
+    .my-video span{
+        display: none;
+    }
+        
+}
+@media (max-width:400px) {
+   
+    .my-video .container{
+        width: 100%;
+        gap: 10px;
+        margin: 10px;
+    }
+    .my-video .container .video{
+        width: 100vw;
+        padding: 7px;
+    }
+    .my-video .container .video .left{
+        gap: 7px;
+    }
+    .my-video .container .video h4{
+        font-size: 15px;
+        margin-bottom: 7px;
+    }
+    .my-video .container .video .right button{
+        padding: 5px;
+    }
+    .my-video .container p {
+        width: 100%;
+    
+    }
+    .my-video span{
+        display: none;
+    }
+        
+}

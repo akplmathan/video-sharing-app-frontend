@@ -1,0 +1,133 @@
+.video-container{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-container .container{
+  display: flex;
+  flex-direction: column;
+}
+.video-container .container .video video{
+  height: 400px;
+  width: 70vw;
+  object-fit: contain;
+  background-color: black;
+}
+.video-container .container .back{
+  position: absolute;
+  color: blue;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  top: 100px;
+  left: 20px;
+}
+.video-container .container .details{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+}
+.video-container .container .details h3{
+  margin: 7px 0;
+  font-size: 26px;
+}
+.video-container .container .details div .row1{
+  display: flex;
+  margin: 10px;
+  gap: 10px;
+  align-items: center;
+}
+.video-container .container .details div{
+  display: flex;
+  justify-content: space-between;
+}
+.video-container .container .active{
+  color: blue;
+}
+
+.video-container .container .details div .row1 p{
+  font-weight: 700;
+  font-size: 20px;
+  color: rgb(104, 101, 101);
+}
+.video-container .container .details .row1 img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.video-container .container .details .row2 button{
+    padding: 0px 40px;
+    display: flex;
+    gap: 3px;
+    color: rgb(85, 84, 84);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    border-radius: 30px;
+}
+.video-container .container .details p{
+  font-size: 18px;
+  color: grey;
+  margin: 10px;
+  letter-spacing: 0.4px;
+}
+.video-container .container .details .row2 button:hover{
+  background-color: rgb(224, 222, 222);
+}
+@media (max-width:950px) {
+  .video-container .container .video video{
+    height: 400px;
+    width: 80vw;
+    object-fit: contain;
+    background-color: black;
+  } 
+}
+
+@media (max-width:750px) {
+  .video-container .container .video video{
+    height: 350px;
+    width: 90vw;
+  } 
+  .video-container .container .back{
+    display: none;
+  }
+}
+@media (max-width:650px) {
+  .video-container .container .video video{
+    height: 300px;
+    width: 95vw;
+  } 
+}
+@media (max-width:450px) {
+  .video-container .container .video video{
+    height: 300px;
+    width: 100vw;
+  } 
+  .video-container .container .details .row2 button{
+    padding: 0px 20px;
+    display: flex;
+    gap: 3px;
+    border-radius: 30px;
+}
+}
+@media (max-width:400px) {
+  .video-container .container .video video{
+    height: 230px;
+    width: 100vw;
+  } 
+}
+@media (max-width:350px){
+
+
+.video-container .container .details .row2 button{
+  padding: 0px 10px;
+  display: flex;
+  gap: 3px;
+  border-radius: 30px;
+}
+}

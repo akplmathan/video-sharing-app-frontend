@@ -1,0 +1,92 @@
+*{
+    text-decoration: none;
+}
+.navbar {
+    background: linear-gradient(60deg, rgb(70, 57, 94), rgb(103, 84, 155));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 60px;
+  box-shadow: 0px 0px 0px 1px gray;
+}
+.navbar .nav-left .logo {
+  display: flex;
+  align-items: center;
+}
+.navbar .nav-left .logo .y-logo {
+  color: rgb(205, 219, 12);
+}
+.navbar .nav-left .logo p {
+  font-weight: 700;
+  position: relative;
+  top: -2px;
+  font-size: 25px;
+  color: aliceblue;
+  letter-spacing: -1.6px;
+}
+
+.nav-right img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: black;
+}
+
+.navbar .nav-center {
+  border: 1px solid rgb(175, 172, 172);
+  flex-basis: 40%;
+  padding: 3px 0px;
+  display: flex;
+  background-color: aliceblue;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+}
+.nav-center .search {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.nav-center .search input {
+  height: 100%;
+  width: 33vw;
+  background-color: transparent;
+  border: none;
+  font-size: 17px;
+  outline: none;
+  padding-left: 5px;
+  border-right: 1px solid rgb(175, 172, 172);
+  align-items: start;
+}
+.nav-center .search div {
+  cursor: pointer;
+  height: 100%;
+  width: 20px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.mob-search{
+    display: none;
+}
+
+@media (max-width:630px) {
+    .navbar .nav-center{
+        display: none;
+    }
+    .nav-right .mob-search{
+        display: block;
+    }
+    .navbar{
+      padding: 10px 20px;
+    }   
+}

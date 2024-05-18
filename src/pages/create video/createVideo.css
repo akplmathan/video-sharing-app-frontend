@@ -1,0 +1,85 @@
+/* Styles for the create video component */
+.create-video {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  
+  /* Styles for the loading state */
+  .create-video.loading .container {
+    pointer-events: none;
+  }
+  
+  /* Styles for the loading content */
+  .create-video .loading {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    bottom: 1;
+    left: 0;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.658); /* Transparent black background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  .create-video .loading h4{
+    color: rgb(255, 255, 255);
+  }
+  .create-video.loading .loading-message {
+    color: white;
+    text-align: center;
+  }
+  
+  .create-video .video {
+    margin-bottom: 20px;
+  }
+  
+  .create-video video {
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+    height: 250px;
+    object-fit: contain; /* Adjust the maximum height of the video */ /* Maintain aspect ratio and fill container */
+  }
+  
+  .create-video .inputs {
+    margin-bottom: 20px;
+  }
+  
+  .create-video .inputs label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .create-video .inputs input {
+    width: 100%;
+    padding: 10px 20px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .create-video button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .create-video button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width:400px) {
+    .create-video .loading{
+      bottom: 0;
+    }
+  }
